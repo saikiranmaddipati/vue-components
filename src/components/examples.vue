@@ -7,11 +7,6 @@
     <button v-on:click="foo = 'baz'">Change it</button>
     <p v-html="raw"></p>
     <p>{{raw}}</p>
-    <h1>Methods</h1>
-    <button v-on:click="a++">Add to A</button>
-    <button v-on:click="b++">Add to B</button>
-    <p>Age + A = {{ addToAcomputed }}</p>
-    <p>Age + B = {{ addToBcomputed }}</p>
   </div>
 </template>
 
@@ -23,38 +18,12 @@ export default {
     firstname: 'saikiran',
     lastname: 'maddipati',
     foo: 'bar',
-    raw: '<h1>hello saikiran</h1>',
-    a: 0,
-    b: 0,
-    age: 20
+    raw: '<h1>hello saikiran</h1>'
     }
   },
-  beforeCreate(){
-    console.log('beforeCreate');
-  },
-  created(){
-    console.log('Created');
-  },
-  beforeMount(){
-    console.log('beforeMount');
-  },
-  mounted(){
-    console.log('Mounted');
-  },
-  beforeUpdate(){
-    console.log('beforeUpdate');
-  },
-  updated(){
-    console.log('updated');
-  },
-  computed: {
-    addToAcomputed: function(){
-      console.log('addToAcomputed');
-      return this.a + this.age;
-    },
-    addToBcomputed: function(){
-      console.log('addToBcomputed');
-      return this.b + this.age;
+  methods:{
+    details:function() {
+        return this.firstname + " " + this.lastname;
     }
   }
 }

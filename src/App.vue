@@ -2,18 +2,21 @@
   <div id="app">
     <HelloWorld />
     <ExampleWord />
+    <ComputedProps />
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import ExampleWord from './components/examples.vue'
+import ComputedProps from './components/computed.vue'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    ExampleWord
+    ExampleWord,
+    ComputedProps
   }
 }
 </script>
