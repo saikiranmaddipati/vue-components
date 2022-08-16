@@ -1,15 +1,18 @@
 <template>
   <div id="app">
+    <HelloWorld />
     <ExampleWord />
   </div>
 </template>
 
 <script>
+import HelloWorld from './components/HelloWorld.vue'
 import ExampleWord from './components/examples.vue'
 
 export default {
   name: 'App',
   components: {
+    HelloWorld,
     ExampleWord
   }
 }

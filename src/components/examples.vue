@@ -17,53 +17,45 @@
 
 <script>
 export default {
-    name: 'ExampleWord',
-    data(){
-    return{
-        firstname: 'saikiran',
-        lastname: 'maddipati',
-        foo: 'bar',
-        raw: '<h1>hello saikiran</h1>',
-        counterComputed: 0,
-        counterMethod: 0,
-        a: 0,
-        b: 0,
-        age: 20
-        }
-    },
-    beforeCreate(){
-      console.log('beforeCreate');
-    },
-    created(){
-      console.log('Created');
-    },
-    beforeMount(){
-      console.log('beforeMount');
-    },
-    mounted(){
-      console.log('Mounted');
-    },
-    beforeUpdate(){
-      console.log('beforeUpdate');
-    },
-    updated(){
-      console.log('updated');
-    },
-    beforeDestroy(){
-      console.log('beforeDestroyed');
-    },
-    destroyed(){
-      console.log('Destroyed');
-    },
-    computed: {
-        addToAcomputed: function(){
-            console.log('addToAcomputed');
-            return this.a + this.age;
-        },
-        addToBcomputed: function(){
-            console.log('addToBcomputed');
-            return this.b + this.age;
-        }
+  name: 'ExampleWord',
+  data(){
+  return{
+    firstname: 'saikiran',
+    lastname: 'maddipati',
+    foo: 'bar',
+    raw: '<h1>hello saikiran</h1>',
+    a: 0,
+    b: 0,
+    age: 20
     }
+  },
+  beforeCreate(){
+    console.log('beforeCreate');
+  },
+  created(){
+    console.log('Created');
+  },
+  beforeMount(){
+    console.log('beforeMount');
+  },
+  mounted(){
+    console.log('Mounted');
+  },
+  beforeUpdate(){
+    console.log('beforeUpdate');
+  },
+  updated(){
+    console.log('updated');
+  },
+  computed: {
+    addToAcomputed: function(){
+      console.log('addToAcomputed');
+      return this.a + this.age;
+    },
+    addToBcomputed: function(){
+      console.log('addToBcomputed');
+      return this.b + this.age;
+    }
+  }
 }
 </script>
