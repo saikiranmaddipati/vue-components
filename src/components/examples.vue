@@ -25,6 +25,9 @@ export default {
     details:function() {
         return this.firstname + " " + this.lastname;
     }
+  },
+  beforeCreate(){
+    console.log('beforecreate');
   }
 }
 </script>
