@@ -13,10 +13,6 @@ export default {
   name: 'ComputedProps',
   data(){
   return{
-    firstname: 'saikiran',
-    lastname: 'maddipati',
-    foo: 'bar',
-    raw: '<h1>hello saikiran</h1>',
     a: 0,
     b: 0,
     age: 20
