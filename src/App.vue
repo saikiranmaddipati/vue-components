@@ -7,18 +7,18 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import ExampleWord from './components/examples.vue'
-import ComputedProps from './components/computed.vue'
+import HelloWorld from "./components/HelloWorld.vue";
+import ExampleWord from "./components/examples.vue";
+import ComputedProps from "./components/computed.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     HelloWorld,
     ExampleWord,
-    ComputedProps
-  }
-}
+    ComputedProps,
+  },
+};
 </script>
 
 <style>
